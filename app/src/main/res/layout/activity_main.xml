@@ -7,6 +7,17 @@
     tools:context=".MainActivity">
 
     <TextView
+        style="@style/New_design.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="And chill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next_activity_button" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello"
@@ -18,11 +29,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.307" />
 
+    <TextView
+        style="@style/New_design2.TextView"
+        android:text="My friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/next_activity_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        />
+
     <Button
         android:id="@+id/next_activity_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next activity"
+        android:text="Press Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,11 +55,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:srcCompat="@drawable/outline_sentiment_satisfied_24"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="670dp" />
-
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next_activity_button"
+        app:layout_constraintVertical_bias="0.943"
+        app:srcCompat="@drawable/outline_sentiment_satisfied_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
